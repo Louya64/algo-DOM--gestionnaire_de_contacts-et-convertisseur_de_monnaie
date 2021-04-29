@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" type="text/css" href="../style.css">
+	    <title>Page 6 Exo 6ter2 - Convertisseur monnaie</title>
+	</head>
+	<body>
+		<header class="flex">
+			<a href="../index.html">Retour à l'acceuil</a><br/>
+			<h1>Page 6 exo 6ter2</h1>
+		</header>
+
+		<div class="enonce">
+			<h2>Énoncé</h2>
+			<p>
+				Ecrire un algorithme permettant de convertir une valeur saisie en euro en 4 devises différentes :<br />
+				• 1 € = 1,22 $<br />
+				• 1 € = 91,14 Roubles<br />
+				• 1€ = 7,89 Yuans<br />
+				• 1€ = 0,89 Livres<br />
+				Après saisie d’une valeur, l’utilisateur doit sélectionner la devise souhaitée, et l’algorithme affiche la valeur convertie.			
+			</p>
+		</div>
+		<p>
+			Sélectionnez la monnaie de départ (vous devrez ensuite rentrer le montant) puis cliquez sur "Convertir"
+		</p>
+		<div style="position: relative;">
+			<table id="table_convertion">
+				<tr>
+					<th></th>
+					<th>Montant</th>
+					<th>Devise</th>
+					<th>Monnaie</th>
+				</tr>
+				<tr id="euro" class="monnaie">
+					<td><button type="button" name="montantEuro">Montant en €</button>
+					</td>
+					<td class="montant"></td>
+					<td class="devise">€</td>
+					<td>Euros</td>
+				</tr>
+				<tr id="dollar" class="monnaie">
+					<td><button type="button" name="montantDollar">Montant en $</button>
+					</td>
+					<td class="montant"></td>
+					<td class="devise">$</td>
+					<td>Dollars</td>
+				</tr>
+				<tr id="rouble" class="monnaie">
+					<td><button type="button" name="montantRouble">Montant en <img src="../images/rouble.png" alt="symbôle du rouble" width="12"></button>
+					</td>
+					<td class="montant"></td>
+					<td class="devise"><img src="../images/rouble.png" alt="symbôle du rouble" width="20"></td>
+					<td>Roubles</td>
+				</tr>
+				<tr id="yen" class="monnaie">
+					<td><button type="button" name="montantYen">Montant en &#165;</button>
+					</td>
+					<td class="montant"></td>
+					<td class="devise">&#165;</td>
+					<td>Yuans</td>
+				</tr>
+				<tr id="livre" class="monnaie">
+					<td><button type="button" name="montantlivre">Montant en £</button>
+					</td>
+					<td class="montant"></td>
+					<td class="devise">£</td>
+					<td>Livres</td>
+				</tr>
+			</table>
+			<button id="btn_convertion" type="button" name="convertion" style="position: absolute; top: 111px; left: 800px;">Convertir</button>
+			<button id="btn_ajout_devise" type="button" name="devise" style="position: absolute; top: 175px; left: 800px;">Ajouter nouvelle devise</button>
+		</div>
+
+		<footer>
+		    <ul>
+		    	<li><a href="exo1.html">exo 1</a> état de l'eau selon température<img src="../images/num1.png" alt="image numéro de rue chiffre 1"></li>
+		    	<li><a href="exo2.html">exo 2</a> reprographies prix décroissants<img src="../images/num2.png" alt="image numéro de rue chiffre 2"></li>
+		    	<li><a href="exo3.html">exo 3</a> Bayonnais imposables<img src="../images/num3.png" alt="image numéro de rue chiffre 3"></li>
+		    	<li><a href="exo4.html">exo 4</a> couleur tarif assurance<img src="../images/num4.png" alt="image numéro de rue chiffre 4"></li>
+		    	<li><a href="exo5.html">exo 5</a> échange des valeurs entre variables<img src="../images/num5.png" alt="image numéro de rue chiffre 5"></li>
+		    	<li><a href="exo6.html">exo 6</a> convertir monnaie<img src="../images/num6.png" alt="image numéro de rue chiffre 6"></li>
+				<li><a href="exo6bis.html">exo 6bis</a> convertir monnaie (amélioration)<img src="../images/num6bis.png" alt="image numéro de rue chiffre 6 bis"></li>
+				<li><a href="exo6ter.html">exo 6ter</a> convertir monnaie (amélioration)<img src="../images/num6bis.png" alt="image numéro de rue chiffre 6 bis"></li>
+				<li><a href="exo6ter2.html">exo 6ter2</a> convertir monnaie (amélioration)<img src="../images/num6bis.png" alt="image numéro de rue chiffre 6 bis"></li>
+		    </ul>
+			<a href="../page7/exo1.html">Aller à Page 7</a>
+		</footer>
+	    <script src="exo6ter2.js"></script>
+	</body>
+</html>
